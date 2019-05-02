@@ -119,10 +119,18 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a8e1c685aa601bbc6c864b3569f5b3c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide symbolic names as "callsigns" to identify the drones.  <a href="namespacewscDrone.html#a8e1c685aa601bbc6c864b3569f5b3c48">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a8e1c685aa601bbc6c864b3569f5b3c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b69fd80d4b37fa08b4bc7cc59547319"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319">PhotoType</a> { <a class="el" href="namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319a633d6abff0a3fc22404347728d195059">PhotoType::RAW</a> = 0, 
-<a class="el" href="namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319a907e06a16862d82ca6907a28a68d0ad6">PhotoType::JPEG</a>
+<tr class="memitem:a45418bce046c31fb4aa8e2114451321f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321f">PhotoType</a> : unsigned { <a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321fa633d6abff0a3fc22404347728d195059">PhotoType::RAW</a> = 0, 
+<a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321faad745ca65bc0200b3bf003a0ff28cb23">PhotoType::JPEG_4_3</a>, 
+<a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321fa46b8744c6bc840d2cb241fa165f3e204">PhotoType::SNAPSHOT</a>, 
+<a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321fa59fe84c43d228f3307801ba9f7151157">PhotoType::FISHEYE</a>
+ }<tr class="memdesc:a45418bce046c31fb4aa8e2114451321f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of photos.  <a href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321f">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a45418bce046c31fb4aa8e2114451321f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab731eef2fe45ae6cc5d10e0976c1f59e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59e">CameraState</a> : unsigned { <a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59ea2baa69eafc7204f3bd8648eba580c489">CameraState::READY</a> = 0, 
+<a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59ea802706a9238e2928077f97736854bad4">CameraState::BUSY</a>, 
+<a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59ead07995fa8f4a3a019d134fcbfca4669a">CameraState::NOT_AVAILABLE</a>
  }</td></tr>
-<tr class="separator:a1b69fd80d4b37fa08b4bc7cc59547319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab731eef2fe45ae6cc5d10e0976c1f59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cbc97e3847433d251f82c864d023139"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewscDrone.html#a6cbc97e3847433d251f82c864d023139">FlyingState</a> : int { <br />
 &#160;&#160;<a class="el" href="namespacewscDrone.html#a6cbc97e3847433d251f82c864d023139a3d8c894b27670cfcfa85c05331bf6111">FlyingState::LANDED</a> = 0, 
 <a class="el" href="namespacewscDrone.html#a6cbc97e3847433d251f82c864d023139a9973294f9987420260891cd1dbfc2848">FlyingState::TAKING_OFF</a> = 1, 
@@ -148,6 +156,11 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a5117a7749ec3da6a1b1ac07e24a07f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of drone movement directions.  <a href="namespacewscDrone.html#a5117a7749ec3da6a1b1ac07e24a07f63">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a5117a7749ec3da6a1b1ac07e24a07f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65eaf03ea64d8fc97d7818d1962cc4b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewscDrone.html#a65eaf03ea64d8fc97d7818d1962cc4b0">VideoState</a> : unsigned { <a class="el" href="namespacewscDrone.html#a65eaf03ea64d8fc97d7818d1962cc4b0a09d4d696b4e935115b9313e3c412509a">VideoState::STOPPED</a> = 0, 
+<a class="el" href="namespacewscDrone.html#a65eaf03ea64d8fc97d7818d1962cc4b0a17130e6c806885e23770df1519b18eb7">VideoState::STARTED</a> = 1, 
+<a class="el" href="namespacewscDrone.html#a65eaf03ea64d8fc97d7818d1962cc4b0ad07995fa8f4a3a019d134fcbfca4669a">VideoState::NOT_AVAILABLE</a> = 2
+ }</td></tr>
+<tr class="separator:a65eaf03ea64d8fc97d7818d1962cc4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -291,6 +304,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ab731eef2fe45ae6cc5d10e0976c1f59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab731eef2fe45ae6cc5d10e0976c1f59e">&#9670;&nbsp;</a></span>CameraState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59e">wscDrone::CameraState</a> : unsigned</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab731eef2fe45ae6cc5d10e0976c1f59ea2baa69eafc7204f3bd8648eba580c489"></a>READY&#160;</td><td class="fielddoc"><p>Camera is ready to take a picture. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab731eef2fe45ae6cc5d10e0976c1f59ea802706a9238e2928077f97736854bad4"></a>BUSY&#160;</td><td class="fielddoc"><p>Camera is busy taking a picture. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab731eef2fe45ae6cc5d10e0976c1f59ead07995fa8f4a3a019d134fcbfca4669a"></a>NOT_AVAILABLE&#160;</td><td class="fielddoc"><p>Camera is not available. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a6cbc97e3847433d251f82c864d023139"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cbc97e3847433d251f82c864d023139">&#9670;&nbsp;</a></span>FlyingState</h2>
 
@@ -369,8 +412,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b69fd80d4b37fa08b4bc7cc59547319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b69fd80d4b37fa08b4bc7cc59547319">&#9670;&nbsp;</a></span>PhotoType</h2>
+<a id="a45418bce046c31fb4aa8e2114451321f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45418bce046c31fb4aa8e2114451321f">&#9670;&nbsp;</a></span>PhotoType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +422,42 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319">wscDrone::PhotoType</a></td>
+          <td class="memname">enum <a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321f">wscDrone::PhotoType</a> : unsigned</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the type of photos. </p>
+<p>NOTE: Anything other than SNAPSHOT will interrupt video. It should resume afterwards. Different phototypes take different amounts of time to take. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a45418bce046c31fb4aa8e2114451321fa633d6abff0a3fc22404347728d195059"></a>RAW&#160;</td><td class="fielddoc"><p>RAW DNG format images. Also creates the JPEG FISHEYE image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45418bce046c31fb4aa8e2114451321faad745ca65bc0200b3bf003a0ff28cb23"></a>JPEG_4_3&#160;</td><td class="fielddoc"><p>JPEG 4:3 image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45418bce046c31fb4aa8e2114451321fa46b8744c6bc840d2cb241fa165f3e204"></a>SNAPSHOT&#160;</td><td class="fielddoc"><p>JPEG 16:9 restricted FOV. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45418bce046c31fb4aa8e2114451321fa59fe84c43d228f3307801ba9f7151157"></a>FISHEYE&#160;</td><td class="fielddoc"><p>JPEG FISHEYE. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a65eaf03ea64d8fc97d7818d1962cc4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65eaf03ea64d8fc97d7818d1962cc4b0">&#9670;&nbsp;</a></span>VideoState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacewscDrone.html#a65eaf03ea64d8fc97d7818d1962cc4b0">wscDrone::VideoState</a> : unsigned</td>
         </tr>
       </table>
   </td>
@@ -389,10 +467,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1b69fd80d4b37fa08b4bc7cc59547319a633d6abff0a3fc22404347728d195059"></a>RAW&#160;</td><td class="fielddoc"><p>RAW DNG format images. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a65eaf03ea64d8fc97d7818d1962cc4b0a09d4d696b4e935115b9313e3c412509a"></a>STOPPED&#160;</td><td class="fielddoc"><p>video is stopped </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1b69fd80d4b37fa08b4bc7cc59547319a907e06a16862d82ca6907a28a68d0ad6"></a>JPEG&#160;</td><td class="fielddoc"><p>JPEG compressed images. </p>
-</td></tr>
+<tr><td class="fieldname"><a id="a65eaf03ea64d8fc97d7818d1962cc4b0a17130e6c806885e23770df1519b18eb7"></a>STARTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a65eaf03ea64d8fc97d7818d1962cc4b0ad07995fa8f4a3a019d134fcbfca4669a"></a>NOT_AVAILABLE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['raw',['RAW',['../namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319a633d6abff0a3fc22404347728d195059',1,'wscDrone']]],
+  ['raw',['RAW',['../namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321fa633d6abff0a3fc22404347728d195059',1,'wscDrone']]],
+  ['ready',['READY',['../namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59ea2baa69eafc7204f3bd8648eba580c489',1,'wscDrone']]],
   ['reallocatebuffers',['ReallocateBuffers',['../classbebop__driver_1_1VideoDecoder.html#aaf3b8db6acb908ef65e710c710dee653',1,'bebop_driver::VideoDecoder']]],
   ['registercommandreceivedcallback',['registerCommandReceivedCallback',['../classwscDrone_1_1DroneController.html#a3eb1b3e6226426100198e76ba6995c66',1,'wscDrone::DroneController']]],
   ['registerstatechangecallback',['registerStateChangeCallback',['../classwscDrone_1_1DroneController.html#a6b9c283949c40707616cc9615b2dc0c9',1,'wscDrone::DroneController']]],

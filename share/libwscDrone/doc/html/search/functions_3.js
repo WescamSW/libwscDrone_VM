@@ -3,6 +3,7 @@ var searchData=
   ['getbatterylevel',['getBatteryLevel',['../classwscDrone_1_1Bebop2.html#ad007d16db723eabfc90f449061c9fa25',1,'wscDrone::Bebop2']]],
   ['getbuffermutex',['getBufferMutex',['../classwscDrone_1_1VideoDriver.html#a5a5646b9149b626d68a5f5bffac7e501',1,'wscDrone::VideoDriver']]],
   ['getcameracontrol',['getCameraControl',['../classwscDrone_1_1Bebop2.html#a3366ae315b82d2d4f42b313ff286499f',1,'wscDrone::Bebop2']]],
+  ['getcamerastate',['getCameraState',['../classwscDrone_1_1CameraControl.html#ab71422f78f1571e8f1fa320954b710ff',1,'wscDrone::CameraControl']]],
   ['getcount',['getCount',['../classwscDrone_1_1Semaphore.html#ac5c5c9814b4f83ed6a86ad247a4aec79',1,'wscDrone::Semaphore']]],
   ['getdevicecontroller',['getDeviceController',['../classwscDrone_1_1DroneController.html#a7d16661e98c7038618169c2feb4f43d2',1,'wscDrone::DroneController']]],
   ['getdiscoverydevice',['getDiscoveryDevice',['../classwscDrone_1_1DroneDiscovery.html#ae4e150c1c6dbebd15319a37d84760ecf',1,'wscDrone::DroneDiscovery']]],
@@ -21,5 +22,6 @@ var searchData=
   ['getrawpointer',['getRawPointer',['../classVideoFrame.html#aa305a65e522ddbb84db9d70c33b27677',1,'VideoFrame']]],
   ['getstatesemaphore',['getStateSemaphore',['../classwscDrone_1_1Bebop2.html#afb08e29d27f218c0da1f7250cbf297a2',1,'wscDrone::Bebop2::getStateSemaphore()'],['../classwscDrone_1_1DroneController.html#a7062a27e9cd009f0c563cad07a3e1aac',1,'wscDrone::DroneController::getStateSemaphore()']]],
   ['getvideodriver',['getVideoDriver',['../classwscDrone_1_1Bebop2.html#a4db92d4a81f10e0e6df69778ed56cb20',1,'wscDrone::Bebop2']]],
+  ['getvideostate',['getVideoState',['../classwscDrone_1_1VideoDriver.html#a1379c0052e02069115fda9ec3ababf28',1,'wscDrone::VideoDriver']]],
   ['getwidth',['getWidth',['../classVideoFrame.html#a3e6e576d177f9363c59de1349ba76b37',1,'VideoFrame']]]
 ];

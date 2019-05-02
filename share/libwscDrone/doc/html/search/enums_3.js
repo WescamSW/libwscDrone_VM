@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['phototype',['PhotoType',['../namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319',1,'wscDrone']]]
+  ['phototype',['PhotoType',['../namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321f',1,'wscDrone']]]
 ];

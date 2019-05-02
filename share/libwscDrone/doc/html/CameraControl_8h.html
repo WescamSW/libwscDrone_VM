@@ -76,6 +76,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;libARController/ARController.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="DroneController_8h_source.html">DroneController.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="VideoDriver_8h_source.html">VideoDriver.h</a>&quot;</code><br />
 </div>
 <p><a href="CameraControl_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -93,10 +94,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a1b69fd80d4b37fa08b4bc7cc59547319"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319">wscDrone::PhotoType</a> { <a class="el" href="namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319a633d6abff0a3fc22404347728d195059">wscDrone::PhotoType::RAW</a> = 0, 
-<a class="el" href="namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319a907e06a16862d82ca6907a28a68d0ad6">wscDrone::PhotoType::JPEG</a>
+<tr class="memitem:a45418bce046c31fb4aa8e2114451321f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321f">wscDrone::PhotoType</a> : unsigned { <a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321fa633d6abff0a3fc22404347728d195059">wscDrone::PhotoType::RAW</a> = 0, 
+<a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321faad745ca65bc0200b3bf003a0ff28cb23">wscDrone::PhotoType::JPEG_4_3</a>, 
+<a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321fa46b8744c6bc840d2cb241fa165f3e204">wscDrone::PhotoType::SNAPSHOT</a>, 
+<a class="el" href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321fa59fe84c43d228f3307801ba9f7151157">wscDrone::PhotoType::FISHEYE</a>
+ }<tr class="memdesc:a45418bce046c31fb4aa8e2114451321f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of photos.  <a href="namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321f">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a45418bce046c31fb4aa8e2114451321f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab731eef2fe45ae6cc5d10e0976c1f59e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59e">wscDrone::CameraState</a> : unsigned { <a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59ea2baa69eafc7204f3bd8648eba580c489">wscDrone::CameraState::READY</a> = 0, 
+<a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59ea802706a9238e2928077f97736854bad4">wscDrone::CameraState::BUSY</a>, 
+<a class="el" href="namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59ead07995fa8f4a3a019d134fcbfca4669a">wscDrone::CameraState::NOT_AVAILABLE</a>
  }</td></tr>
-<tr class="separator:a1b69fd80d4b37fa08b4bc7cc59547319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab731eef2fe45ae6cc5d10e0976c1f59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the CameraControl class provided a limited amount of access to the Bebop 2 camaera system. </p>

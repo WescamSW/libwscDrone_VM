@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jpeg',['JPEG',['../namespacewscDrone.html#a1b69fd80d4b37fa08b4bc7cc59547319a907e06a16862d82ca6907a28a68d0ad6',1,'wscDrone']]]
+  ['jpeg_5f4_5f3',['JPEG_4_3',['../namespacewscDrone.html#a45418bce046c31fb4aa8e2114451321faad745ca65bc0200b3bf003a0ff28cb23',1,'wscDrone']]]
 ];

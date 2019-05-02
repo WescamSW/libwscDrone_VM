@@ -1,8 +1,9 @@
 var searchData=
 [
   ['callsign',['Callsign',['../namespacewscDrone.html#a8e1c685aa601bbc6c864b3569f5b3c48',1,'wscDrone']]],
-  ['cameracontrol',['CameraControl',['../classwscDrone_1_1CameraControl.html',1,'wscDrone::CameraControl'],['../classwscDrone_1_1DroneController.html#a591d0157b2bbf9fbb63ef9de2e3755c0',1,'wscDrone::DroneController::CameraControl()'],['../classwscDrone_1_1CameraControl.html#a005400d28f62bd2f33943e073e5ac647',1,'wscDrone::CameraControl::CameraControl()=delete'],['../classwscDrone_1_1CameraControl.html#a36beb5757a7593bed10ddccfc6d170b7',1,'wscDrone::CameraControl::CameraControl(std::shared_ptr&lt; DroneController &gt; droneController, PhotoType photoType)']]],
+  ['cameracontrol',['CameraControl',['../classwscDrone_1_1CameraControl.html',1,'wscDrone::CameraControl'],['../classwscDrone_1_1DroneController.html#a591d0157b2bbf9fbb63ef9de2e3755c0',1,'wscDrone::DroneController::CameraControl()'],['../classwscDrone_1_1CameraControl.html#a005400d28f62bd2f33943e073e5ac647',1,'wscDrone::CameraControl::CameraControl()=delete'],['../classwscDrone_1_1CameraControl.html#a7eaaae430b4c6d930d28567ce0c6e4e0',1,'wscDrone::CameraControl::CameraControl(std::shared_ptr&lt; DroneController &gt; droneController, std::shared_ptr&lt; VideoDriver &gt; videoDriver)']]],
   ['cameracontrol_2eh',['CameraControl.h',['../CameraControl_8h.html',1,'']]],
+  ['camerastate',['CameraState',['../namespacewscDrone.html#ab731eef2fe45ae6cc5d10e0976c1f59e',1,'wscDrone']]],
   ['capturephoto',['capturePhoto',['../classwscDrone_1_1CameraControl.html#aefd1e4f2f61cf630e3cff70616e6a034',1,'wscDrone::CameraControl']]],
   ['charlie',['CHARLIE',['../namespacewscDrone.html#a8e1c685aa601bbc6c864b3569f5b3c48a8c225cda4019c4bbaa861e402ef98b62',1,'wscDrone']]],
   ['cleanupbuffers',['CleanupBuffers',['../classbebop__driver_1_1VideoDecoder.html#a80b86369ab7bdb52dad8ce27c2e6cfc9',1,'bebop_driver::VideoDecoder']]],

@@ -16,6 +16,7 @@
 #ifndef SEMAPHORE_H_
 #define SEMAPHORE_H_
 
+#include <iostream>
 #include <mutex>
 #include <condition_variable>
 #include <chrono>
@@ -36,6 +37,7 @@ public:
     void notify()
     {
         std::unique_lock<std::mutex> lck(mtx);
+
         ++count;
         cv.notify_one();
     }
@@ -44,7 +46,8 @@ public:
     void wait()
     {
         std::unique_lock<std::mutex> lck(mtx);
-        while(count == 0)
+
+        if(count == 0)
         {
             cv.wait(lck);
         }
@@ -56,23 +59,25 @@ public:
     // Returns TRUE if we've timed out
     bool waitTimed(unsigned int timeMilliseconds)
     {
-	bool ret = false;
+	    bool ret = false;
         std::unique_lock<std::mutex> lck(mtx);
-        while(count == 0)
+
+        if (count == 0)
         {
-            if (cv.wait_for(lck, timeMilliseconds*1ms) == std::cv_status::timeout) {
-	        ret = true;
+            auto returnValue = cv.wait_for(lck, std::chrono::milliseconds(timeMilliseconds));
+            if (returnValue == std::cv_status::timeout) {
+	            ret = true;
             }
         }
 
         --count;
 
-	return ret;
+        return ret;
     }
 
     int getCount()
     {
-	return count;
+        return count;
     }
 
 

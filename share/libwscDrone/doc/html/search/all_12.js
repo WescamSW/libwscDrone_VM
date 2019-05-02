@@ -7,5 +7,6 @@ var searchData=
   ['videodriver_2eh',['VideoDriver.h',['../VideoDriver_8h.html',1,'']]],
   ['videoframe',['VideoFrame',['../classVideoFrame.html',1,'VideoFrame'],['../classVideoFrame.html#a029b9fc6b8a06ad1cbd4ee5a30e82d7c',1,'VideoFrame::VideoFrame()=delete'],['../classVideoFrame.html#ab3a4f3826089ccc1fc8f7ff8c1c1bcb1',1,'VideoFrame::VideoFrame(unsigned height, unsigned width)']]],
   ['videoframe_2eh',['VideoFrame.h',['../VideoFrame_8h.html',1,'']]],
-  ['videoframereceivedcallback',['VideoFrameReceivedCallback',['../namespacewscDrone.html#a8d6670e64b1f86e59c19c4fa11c3c62d',1,'wscDrone']]]
+  ['videoframereceivedcallback',['VideoFrameReceivedCallback',['../namespacewscDrone.html#a8d6670e64b1f86e59c19c4fa11c3c62d',1,'wscDrone']]],
+  ['videostate',['VideoState',['../namespacewscDrone.html#a65eaf03ea64d8fc97d7818d1962cc4b0',1,'wscDrone']]]
 ];

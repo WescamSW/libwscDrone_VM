@@ -7,8 +7,8 @@ var indexSectionsWithContent =
   4: "bcdgilmnprstvw~",
   5: "bcdfilmpruv",
   6: "csv",
-  7: "cfmp",
-  8: "abcdefhjlmrtu"
+  7: "cfmpv",
+  8: "abcdefhjlmnrstu"
 };
 
 var indexSectionNames =

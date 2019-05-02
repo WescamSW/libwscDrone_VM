@@ -45,6 +45,12 @@ using VideoDecoderConfigCallback = ARCONTROLLER_Stream_DecoderConfigCallback_t;
 /// alias for ARSDK3 ARCONTROLLER_Stream_DidReceiveFrameCallback_t
 using VideoFrameReceivedCallback = ARCONTROLLER_Stream_DidReceiveFrameCallback_t;
 
+enum class VideoState : unsigned {
+    STOPPED = 0,      ///< video is stopped
+    STARTED = 1,      //< video is started
+    NOT_AVAILABLE = 2 //< video is not available
+};
+
 /// This driver extends the VideoDecoder class created from ROS (Robot Operating System).
 class VideoDriver : public bebop_driver::VideoDecoder {
 public:
@@ -79,10 +85,20 @@ public:
     /// Stops the H.264 video streaming interface on the drone
     void stop();
 
+    /// Get the last known state of the video
+    /// @returns the enumerated video state
+    VideoState getVideoState() { return m_videoState; }
+
+    /// This function is used by the callback to set the video state when it receives an update
+    /// from the drone
+    /// @param videoState An enumerate of the state
+    void setVideoState(VideoState videoState) { m_videoState = videoState; }
+
 private:
     ARCONTROLLER_Device_t *m_deviceController = nullptr; ///< raw pointer to the ARSDK device controller
     std::shared_ptr<std::mutex> m_bufferGuard = nullptr; ///< shared pointer to a mutex protecting the video frame object
     std::shared_ptr<VideoFrame> m_frame       = nullptr; ///< shared pointer to a VideoFrame object
+    VideoState m_videoState;
 
     /// Default callback for handling decoder changes
     /// @param codec ARSDK3 codec
